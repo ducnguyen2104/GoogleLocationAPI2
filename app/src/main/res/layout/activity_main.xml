@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom = "16dp"
+    android:paddingLeft = "16dp"
+    android:paddingRight = "16dp"
+    android:paddingTop = "16dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.windows8.googlelocationapi.MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/background2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_mylocation"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Vị trí của bạn:"
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
+
+    <TextView
+        android:id="@+id/txtCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="IP"
+        android:inputType="textPersonName"
+        android:text="192.168."
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textColorLink="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Port"
+        android:inputType="textPersonName"
+        android:text="2104"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textColorLink="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <EditText
+        android:id="@+id/editTextIPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="IP Analyzer"
+        android:inputType="textPersonName"
+        android:text="192.168."
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textColorLink="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <EditText
+        android:id="@+id/editTextPortA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Port Analyzer"
+        android:inputType="textPersonName"
+        android:text="50000"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textColorLink="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <TextView
+        android:id="@+id/textViewmsgFromA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.14"
+        android:text="Message from Analyzer:"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <TextView
+        android:id="@+id/textViewmsgsent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.14"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color" />
+
+    <Button
+        android:id="@+id/btnSend"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Gửi vị trí" />
+
+</LinearLayout>
